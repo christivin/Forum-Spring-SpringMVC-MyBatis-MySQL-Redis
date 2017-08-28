@@ -37,6 +37,7 @@
         </init-param>
     </servlet>
 
+    <!--controller中采用注解的方式进行 配置，跳转页面-->
     <servlet-mapping>
         <servlet-name>spring-mvc</servlet-name>
         <url-pattern>*.do</url-pattern>

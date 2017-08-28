@@ -9,10 +9,10 @@ public class MyConstant {
     public static final String QINIU_BUCKET_NAME = "你的七牛云BUCKET_NAME";
 
     //发送邮件的邮箱，要与df.properties中的一致
-    public static final String MAIL_FROM = "fanchao100@yeah.net";
+    public static final String MAIL_FROM = "13297965947@163.com";
 
     //域名
-    public static final String DOMAIN_NAME = "http://localhost:8080/df/";
+    public static final String DOMAIN_NAME = "http://10.160.64.183:8080/ShengForum/";
     //public static final String DOMAIN_NAME = "http://www.doublefuck.top/";
 
     //三种操作

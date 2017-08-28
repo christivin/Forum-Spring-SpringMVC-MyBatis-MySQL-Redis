@@ -30,11 +30,15 @@ public class TopicController {
         model.addAttribute("topicList",topicList);
         return "topic";
     }
-
+    /*
+    * 文章
+    *
+    * */
     @RequestMapping("/listImage.do")
     public String listImage(Model model){
         List<String> imageList = topicService.listImage();
         model.addAttribute("imageList",imageList);
+        //用视图解析器进行解析，视图解析器已设置前缀后缀，只需返回中间部分
         return "image";
     }
 }

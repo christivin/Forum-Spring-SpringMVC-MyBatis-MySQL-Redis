@@ -27,6 +27,7 @@ public class MessageController {
         Map<String,List<Message>> map = messageService.listMessageByUid(sessionUid);
         model.addAttribute("map",map);
         System.out.println(map);
+        //用视图解析器进行解析，视图解析器已设置前缀后缀，只需返回中间部分
         return "message";
     }
 

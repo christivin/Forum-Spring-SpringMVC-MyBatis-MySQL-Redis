@@ -40,7 +40,7 @@ public class LoginController {
     public String register(User user, String repassword,Model model){
         String result = loginService.register(user,repassword);
         if(result.equals("ok")){
-            model.addAttribute("info","系统已经向你的邮箱发送了一封邮件哦，验证后就可以登录啦~");
+            model.addAttribute("info","已经向你的邮箱发送了一封邮件哦，验证后就可以登录啦~");
             return "prompt/promptInfo";
         }else {
             model.addAttribute("register","yes");
@@ -75,7 +75,7 @@ public class LoginController {
 
     /**
      * 激活
-     * @param activateCode
+     * @param code
      * @param model
      * @return
      */
